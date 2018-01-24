@@ -117,7 +117,9 @@ static void processRequest(char *reqPayload, char **resPayload)
                 for( j = 0; j < count; j++)
                 {
                     obj = cJSON_GetArrayItem(paramList, j);
-                    if((strcmp(reqObj->u.getReq->paramNames[i], cJSON_GetObjectItem(obj, "name")->valuestring) == 0) && (cJSON_GetObjectItem(obj, "name") != NULL))
+                    if((NULL != obj) &&
+		       (cJSON_GetObjectItem(obj, "name")!= NULL) &&
+		       (strcmp(reqObj->u.getReq->paramNames[i], cJSON_GetObjectItem(obj, "name")->valuestring) == 0))
                     {
                         resObj->u.getRes->params[i] = (param_t *) malloc(sizeof(param_t));
                         resObj->u.getRes->params[i][0].name = (char*) malloc (sizeof(char)*100);
