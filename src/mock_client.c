@@ -1,3 +1,6 @@
+#include "mock_adapter.h"
+
+/*
 #include <stdio.h>
 #include "libparodus.h"
 #include <nanomsg/nn.h>
@@ -14,10 +17,11 @@
 
 #define CONTENT_TYPE_JSON  "application/json"
 #define LOGGING_MODULE     "MOCK_CLIENT"
-#define DB_FILE      "client_db.json"
+#define DB_FILE      "../../client_db.json"
 #define Error(...)      cimplog_error(LOGGING_MODULE, __VA_ARGS__)
 #define Info(...)       cimplog_info(LOGGING_MODULE, __VA_ARGS__)
 #define Print(...)      cimplog_debug(LOGGING_MODULE, __VA_ARGS__)
+*/
 
 libpd_instance_t iot_instance;
 

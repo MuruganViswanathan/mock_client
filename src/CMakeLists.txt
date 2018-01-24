@@ -12,7 +12,7 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -W -g -fprofile-arcs -ftest-coverage -O0")
-set(SOURCES mock_client.c)
+set(SOURCES mock_client.c mock_adapter.c)
 
 add_executable(mock_client ${SOURCES})
 
