@@ -11,7 +11,7 @@
 #   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
-set(SOURCES mock_client.c)
+set(SOURCES mock_client.c mock_adapter.c)
 
 add_executable(mock_client ${SOURCES})
 
